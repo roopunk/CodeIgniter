@@ -265,7 +265,7 @@ Available options are::
 All of the methods listed above can be accessed without passing a
 specific adapter to the driver loader as follows::
 
-	$this->load->driver('cache');
+	$this->load->driver('cache', array('adapter'=>'redis'));
 	$this->cache->redis->save('foo', 'bar', 10);
 
 For more information on Redis, please see
